@@ -5,11 +5,11 @@
   Logged in as <%= current_user.name %>.
   <%= link_to "Log Out", session_path("current"), method: 'delete' %>
 <% else %>
-  <%= link_to "Log In", new_session_path %>
-  <%= link_to "Sign Up", new_user_path %>
+  <%= link_to "Log In", login_path %>
+  <%= link_to "Sign Up", signup_path %>
 <% end %>
 </div>
-<h3><%= link_to 'Create a Lettergram', new_letter_path %></h3>
+  <h3><%= link_to 'Create a Lettergram', step_one_path %></h3>
 </div>
 
 <div class="flashMessage">
@@ -23,5 +23,5 @@
   <h2>Pick a card</h2>
   <h2>Pick a font</h2>
   <h2>Write a message</h2>
-  <h3><%= link_to 'Create a Lettergram', new_letter_path %></h3>
+  <h3><%= link_to 'Create a Lettergram', step_one_path %></h3>
 </div>
