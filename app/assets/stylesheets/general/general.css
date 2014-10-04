@@ -1,0 +1,72 @@
+/* Main */
+.companyName {
+  border-style: solid;
+  border-color: #33CCFF;
+  margin: 70px 30% 10px 30%;
+  border-radius: 10px;
+  text-align: center;
+  
+}
+
+.containerLogo {
+  height: 500px;
+  width: 100%;
+}
+
+.companyName a {
+  text-decoration: none;
+  color: #33CCFF;
+  font-size: 20px;
+}
+
+body {
+  font-family: Helvetica, Verdana;
+  color: #33CCFF;
+  text-align: center;
+}
+
+.container h1 {
+  border-style: solid;
+  border-color: #33CCFF;
+  margin: 10px 30% 10px 30%;
+}
+
+.container h3 a {
+  text-decoration: underline;
+  color: #33CCFE;
+}
+
+/* Links */
+
+.userStatus {
+  text-align: center;
+}
+
+.userStatus a {
+  text-decoration: none;
+  color: blue;
+  font-size: 20px;
+}
+
+.userStatus a:hover {
+  text-decoration: underline;
+}
+
+/* Flash Message */
+.errorMessage .error {
+  margin: 5px 30%;
+  background-color: black;
+  color: #fff;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+.flashMessage {
+  margin: 5px 30%;
+  background-color: black;
+  color: #fff;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}

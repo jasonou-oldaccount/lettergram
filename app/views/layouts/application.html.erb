@@ -5,10 +5,14 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
 </head>
 <body>
-  <h1><%= link_to 'LETTERGRAM', root_url %><h1>
-  <div>
+  <div class="containerLogo">
+  <div class="companyName"><h1><%= link_to 'LETTERGRAM', root_url %><h1></div>
+  <div class="userStatus">
   <% if current_user %>
     Logged in as <%= current_user.name %>.
     <%= link_to "Log Out", session_path("current"), method: 'delete' %>
@@ -17,12 +21,13 @@
     <%= link_to "Sign Up", new_user_path %>
   <% end %>
   </div>
-  <div>
+  <div class="flashMessage">
     <% flash.each do |name, msg| %>
       <%= content_tag :div, msg, id: "flash_#{name}" %>
     <% end %>
   </div>
+  </div>
 <%= yield %>
-
+    
 </body>
 </html>
