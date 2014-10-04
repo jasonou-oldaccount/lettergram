@@ -1,5 +1,6 @@
 <div class="containerLogoMain">
-<div class="companyName"><h1><%= link_to 'LETTERGRAM', root_url %></h1></div>
+<div class="space-div"></div>
+<div class="companyNameMain"><h1><%= link_to 'lettergram', root_url %></h1></div>
 <div class="userStatus">
 <% if current_user %>
   Logged in as <%= current_user.name %>.
@@ -9,7 +10,7 @@
   <%= link_to "Sign Up", signup_path %>
 <% end %>
 </div>
-  <h3><%= link_to 'Create a Lettergram', step_one_path %></h3>
+  <h3 class="create-top" align="center"><%= link_to 'Send a Letter Now', step_one_path %></h3>
 </div>
 
 <div class="flashMessage">
