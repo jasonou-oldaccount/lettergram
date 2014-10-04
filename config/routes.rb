@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
-
+  
+  get 'signup', to: 'users#new', as: 'signup'
+  get 'login', to: 'sessions#new', as: 'login'
+  get 'logout', to: 'sessions#destroy', as: 'logout'
+  get 'step_one', to: 'letter#new', as: 'step_one'
+  get 'step_two_gallery', to: 'gallery#new', as: 'step_two_gallery'
+  get 'step_two_design', to: 'design#new', as: 'step_two_design'
+  get 'step_three', to: 'message#new', as: 'step_three'
+  get 'step_four', to: 'pay#new', as: 'step_four'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
