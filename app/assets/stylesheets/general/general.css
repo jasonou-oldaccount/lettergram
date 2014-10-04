@@ -32,13 +32,13 @@ height:10px;
 }
 
 .create-top{
-  margin-top:140px;
+  margin-top:160px;
   border:1px solid #ffffff;
   width:150px;
   margin-left:auto;
   margin-right:auto;
   font-family:'Josefin Sans',sans-serif;
-  
+  -webkit-transition:background-color .5s;
     transition: background-color .5s;
 }
 
@@ -106,14 +106,58 @@ body {
 
 .userStatus a {
   text-decoration: none;
-  color: blue;
+  color: white;
   font-size: 20px;
   font-weight:normal;
+  text-align:center;
 }
 
 .userStatus a:hover {
-  text-decoration: underline;
+
 }
+
+.userStatus ul{
+    list-style-type:none;
+}
+
+.userStatus li{
+    float:left;
+    color:white;
+    
+}
+
+.userStatus ul li{
+    border:1px solid white;
+    position:relative;
+
+}
+
+
+.userStatus>ul>li>ul{
+    position:absolute;
+    visibility:hidden;
+    display:none;
+    opacity:0;
+    -webkit-transition: all .25s ease-in-out;
+       -moz-transition: all .25s ease-in-out;
+        -ms-transition: all .25s ease-in-out;
+         -o-transition: all .25s ease-in-out;
+            transition: all .25s ease-in-out;
+}
+
+.userStatus>ul>li:hover>ul {
+    opacity: 1;
+	visibility:visible;
+	display:block;
+	margin-left:-10px;
+	width:40px;
+	
+}
+
+.userStatus li:hover{
+    background-color:#ff959c;
+}
+
 
 /* Flash Message */
 .errorMessage .error, .flashMessage{
