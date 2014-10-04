@@ -5,3 +5,7 @@
     max-width: 500px;
     max-height: 300px;
 }
+.letterimage:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
