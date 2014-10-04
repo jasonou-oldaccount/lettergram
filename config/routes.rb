@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get 'step_two_gallery', to: 'gallery#new', as: 'step_two_gallery'
   get 'step_two_design', to: 'design#new', as: 'step_two_design'
   get 'step_three', to: 'message#new', as: 'step_three'
-  get 'step_four', to: 'pay#new', as: 'step_four'
+  get 'step_four', to: 'charges#new', as: 'step_four'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -20,7 +20,7 @@ Rails.application.routes.draw do
       resources :gallery
       resources :design
       resources :message
-      resources :pay
+      resources :charges
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
