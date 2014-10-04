@@ -10,6 +10,8 @@ Rails.application.routes.draw do
       resources :letter
       resources :gallery
       resources :design
+      resources :message
+      resources :pay
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
