@@ -66,3 +66,12 @@ body {
   font-style: italic;
   text-align: center;
 }
+
+/* Steps */
+.steps {
+  border-style: solid;
+  border-color: #33CCFF;
+  width: 400px;
+  height: 50px;
+  font-size: 12px;
+}
