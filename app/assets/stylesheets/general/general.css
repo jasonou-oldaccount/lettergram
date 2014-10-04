@@ -1,19 +1,63 @@
 /* Main */
-.companyName {
+.companyNameMain {
   border-style: solid;
-  border-color: #33CCFF;
-  width: 200px;
-  height: 50px;
+  border-color: white;
+  width: 700px;
+  height: 150px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
-.companyName h1 {
-  margin: 0px;
+.space-div{
+height:10px;
+}
+
+.companyName{
+  border-style: solid;
+  border-color: #33CCFF;
+  width: 700px;
+  height: 150px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.companyNameMain h1 {
+  margin-top: 30px;
+  font-family: 'Righteous', cursive;
+}
+
+.companyName h1{
+  margin-top: 30px;
+  font-family: 'Righteous', cursive;
+}
+
+.create-top{
+  margin-top:140px;
+  border:1px solid #ffffff;
+  width:170px;
+  margin-left:auto;
+  margin-right:auto;
+  font-family:'Josefin Sans',sans-serif;
+}
+
+.create-top a{
+    text-decoration:none;
+    color:white;
+}
+
+.create-top:hover{
+    background-color:yellow;  
+    color:black;  
+}
+.create-top:hover a{
+    color:black;
 }
 
 .containerLogoMain {
   height: 500px;
   width: 100%;
   background-color: #F5CDC3;
+  background-image:url("/assets/background-lettergram.jpg");
 }
 
 .containerLogo {
@@ -22,10 +66,16 @@
   background-color: white;
 }
 
-.companyName a {
+.companyNameMain a {
+  text-decoration: none;
+  color: white;
+  font-size: 70px;
+}
+
+.companyName a{
   text-decoration: none;
   color: #33CCFF;
-  font-size: 20px;
+  font-size: 70px;
 }
 
 body {
@@ -49,7 +99,7 @@ body {
 
 .userStatus {
   text-align: right;
-  margin-top: -50px;
+  margin-top:-150px;
 }
 
 .userStatus a {
