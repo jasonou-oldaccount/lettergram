@@ -11,10 +11,16 @@
   margin: 0px;
 }
 
-.containerLogo {
+.containerLogoMain {
   height: 500px;
   width: 100%;
   background-color: #F5CDC3;
+}
+
+.containerLogo {
+  height: 100px;
+  width: 100%;
+  background-color: white;
 }
 
 .companyName a {

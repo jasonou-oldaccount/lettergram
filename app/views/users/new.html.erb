@@ -1,3 +1,15 @@
+<div class="containerLogo">
+<div class="companyName"><h1><%= link_to 'LETTERGRAM', root_url %></h1></div>
+<div class="userStatus">
+<% if current_user %>
+  Logged in as <%= current_user.name %>.
+  <%= link_to "Log Out", session_path("current"), method: 'delete' %>
+<% else %>
+  <%= link_to "Log In", new_session_path %>
+  <%= link_to "Sign Up", new_user_path %>
+<% end %>
+</div>
+</div>
 <h1>Sign Up</h1>
 <%= form_for @user do |f| %>
   <% if @user.errors.any? %>

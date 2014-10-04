@@ -10,25 +10,6 @@
   <meta name="viewport" content="width=device-width; initial-scale=1.0">
 </head>
 <body>
-  <div class="containerLogo">
-  <div class="companyName"><h1><%= link_to 'LETTERGRAM', root_url %></h1></div>
-  <div class="userStatus">
-  <% if current_user %>
-    Logged in as <%= current_user.name %>.
-    <%= link_to "Log Out", session_path("current"), method: 'delete' %>
-  <% else %>
-    <%= link_to "Log In", new_session_path %>
-    <%= link_to "Sign Up", new_user_path %>
-  <% end %>
-  </div>
-  <h3><%= link_to 'Create a Lettergram', new_letter_path %></h3>
-  </div>
-
-<div class="flashMessage">
-  <% flash.each do |name, msg| %>
-    <%= content_tag :div, msg, id: "flash_#{name}" %>
-  <% end %>
-</div>
 
 <%= yield %>
   
