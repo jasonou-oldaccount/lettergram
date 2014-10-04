@@ -43,7 +43,8 @@ body {
 /* Links */
 
 .userStatus {
-  text-align: center;
+  text-align: right;
+  margin-top: -50px;
 }
 
 .userStatus a {
