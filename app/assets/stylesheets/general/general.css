@@ -85,6 +85,11 @@ body {
   text-align: center;
 }
 
+.container{
+  font-family:'Josefin Sans',sans-serif;
+
+}
+
 .container h1 {
   border-style: solid;
   border-color: #33CCFF;
@@ -94,8 +99,18 @@ body {
 .container h3 a {
   text-decoration: underline;
   color: #33CCFE;
+  font-weight:none;
 }
 
+.container ol{
+    margin-left:-20px;
+
+}
+
+.container li{
+    font-size:20px;
+
+}
 /* Links */
 
 .userStatus {
