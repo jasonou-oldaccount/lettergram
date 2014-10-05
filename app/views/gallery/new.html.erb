@@ -14,13 +14,12 @@
 <h1>Gallery#new</h1>
 <p>Find me in app/views/gallery/new.html.erb</p>
 
-<p>Image Test</p>
 <center>
 <table>
 	<tr>
 		<td>
-			<div id="elephant" class="letterimage" class="img-zoom">
-        <%= link_to image_tag("cardimages/elephante.jpg"), step_three_path%>
+			<div id="img_box" class="letterimage">
+               <%= link_to image_tag("cardimages/elephante.jpg"), step_three_path%>
 			</div>
 		</td>
 		<td>
@@ -69,5 +68,7 @@
 		</td>		
 	</tr>
 </table>
+
+
 </center>
 <div class="optionMessage"><%= link_to 'Add A Message', step_three_path %></div>
