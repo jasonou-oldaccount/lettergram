@@ -17,17 +17,22 @@
 .companyName a{
   text-decoration: none;
   color: #33CCFF;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .space-div{
 height:10px;
 }
 
+.space-div-top{
+height:80px;
+
+}
+
 .companyName{
   border-style: solid;
   border-color: #33CCFF;
-  width: 500px;
+  width: 250px;
   height: 50px;
   margin-left:auto;
   margin-right:auto;
@@ -40,6 +45,7 @@ height:10px;
 
 .companyName h1{
   font-family: 'Righteous', cursive;
+  margin-top:-5px;
 }
 
 .create-top{
@@ -116,9 +122,16 @@ body {
 
 .userStatus {
   text-align: right;
-  margin-top:-170px;
+  margin-top:-92px;
   font-family:'Josefin Sans',sans-serif;
-  margin-left:910px;
+ }
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }
 
 .userStatus a {
@@ -136,6 +149,7 @@ body {
 .userStatus ul{
     list-style-type:none;
 }
+
 
 .userStatus li{
     background-color:#ff959c;

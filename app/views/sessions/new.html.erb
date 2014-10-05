@@ -1,6 +1,8 @@
 <div class="containerLogo">
+<div class="space-div-top"></div>
 <div class="companyName"><h1><%= link_to 'lettergram', root_url %></h1></div>
-<div class="userStatus">
+</div>
+<div class="userStatus clearfix">
 <ul>
     <li><a href="#">Account</a>
         <ul>
@@ -23,8 +25,8 @@
     <a href="#"><li>Contact</li></a>
 </ul>  
 </div>
-</div>
-<h1>Login</h1>
+
+<h1 style="margin-top:100px;">Login</h1>
 <%= form_tag sessions_path do %>
   <div class="form">
     <%= label_tag :email %><br />
