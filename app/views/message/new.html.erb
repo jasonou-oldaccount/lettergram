@@ -1,14 +1,30 @@
 <div class="containerLogo">
-<div class="companyName"><h1><%= link_to 'LETTERGRAM', root_url %></h1></div>
-<div class="userStatus">
-<% if current_user %>
-  Logged in as <%= current_user.name %>.
-  <%= link_to "Log Out", session_path("current"), method: 'delete' %>
-<% else %>
-  <%= link_to "Log In", login_path %>
-  <%= link_to "Sign Up", signup_path %>
-<% end %>
+<div class="space-div-top"></div>
+<div class="companyName"><h1><%= link_to 'lettergram', root_url %></h1></div>
 </div>
+<div class="userStatus">
+<ul>
+    <li><a href="#">Account</a>
+        <ul>
+            <% if current_user %>
+                <li style="font-size:16px;">Logged in as <%= current_user.name %>.</li>
+                <li><%= link_to "Log Out", session_path("current"), method: 'delete' %></li>
+            <% else %>
+                <li><%= link_to "Log In", login_path %></li>
+                <li><%= link_to "Sign Up", signup_path %></li>
+            <% end %>
+        </ul>
+    </li>
+    <a href="#"><li>About</li></a>
+    <li><a href="#">Products</a>
+        <ul>
+            <li><%= link_to "Choose from a template", step_two_gallery_path%></li>
+            <li><%= link_to "Design your Own", step_two_design_path%></li>
+        </ul>
+    </li>
+    <a href="#"><li>Contact</li></a>
+</ul>  
+
 </div>
 <div class="steps"><h1>Step Three: Add A Message.</h1></div>
 <h1>Message#new</h1>
