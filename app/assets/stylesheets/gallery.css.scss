@@ -4,8 +4,18 @@
 .letterimage img{
     max-width: 500px;
     max-height: 300px;
+    z-index:9999;
+
 }
 .letterimage:hover {
   opacity: 0.6;
   filter: alpha(opacity=60); /* For IE8 and earlier */
+  z-index:-9999;
+
 }
+
+.img-zoom{
+	width: 600px; 
+	
+}
+

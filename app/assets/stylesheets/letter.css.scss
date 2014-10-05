@@ -1,3 +1,14 @@
 // Place all the styles related to the letter controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.image{
+    max-width: 500px;
+    max-height: 300px;
+
+}
+.image:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
