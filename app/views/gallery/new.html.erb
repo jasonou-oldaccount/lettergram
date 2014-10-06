@@ -18,62 +18,57 @@
 <table>
     <tr>
         <td>
-            <div id="img_box" class="letterimage">
-            
-               <%= link_to image_tag("cardimages/elephante.jpg"), step_three_path%>
+            <div id="img_box" class="letterimage" value="elephant" onclick="pop('Elephante', 'cardimages/elephante.jpg')">
+               <%= image_tag("cardimages/elephante.jpg")%>
             </div>
         </td>
         <td>
-            <div id="img_box" class="letterimage">
-                <%= link_to image_tag("cardimages/flower.jpg"), step_three_path%>
+            <div id="img_box" class="letterimage" onclick="pop('Flower', 'cardimages/flower.jpg')">
+                <%= image_tag("cardimages/flower.jpg")%>
             </div>
         </td>
         <td>
-            <div id="img_box" class="letterimage">
-                <%= link_to image_tag("cardimages/girafa.jpg"), step_three_path%>
+            <div id="img_box" class="letterimage" onclick="pop('Girafa', 'cardimages/girafa.jpg')">
+                <%= image_tag("cardimages/girafa.jpg")%>
             </div>
         </td>
     </tr>
     <tr>
         <td>
-            <div id="img_box" class="letterimage">
-                <%= link_to image_tag("cardimages/helloblue.jpg"), step_three_path%>
+            <div id="img_box" class="letterimage" onclick="pop('Hello Blue', 'cardimages/helloblue.jpg')">
+                <%= image_tag("cardimages/helloblue.jpg")%>
             </div>
         </td>
         <td>
-            <div id="img_box" class="letterimage">
-                <%= link_to image_tag("cardimages/london.jpg"), step_three_path%>
+            <div id="img_box" class="letterimage" onclick="pop('London', 'cardimages/london.jpg')">
+                <%= image_tag("cardimages/london.jpg")%>
             </div>
         </td>
         <td>
-            <div id="img_box" class="letterimage">
-                <%= link_to image_tag("cardimages/oranges.jpg"), step_three_path%>
+            <div id="img_box" class="letterimage" onclick="pop('Oranges', 'cardimages/oranges.jpg')">
+                <%= image_tag("cardimages/oranges.jpg")%>
             </div>
         </td>       
     </tr>
     <tr>
-        <td>
-            <div id="img_box" class="letterimage">
-                <%= link_to image_tag("cardimages/sansebastian.jpg"), step_three_path%>
+        <td> 
+            <div id="img_box" class="letterimage" onclick="pop('Sansebastian', 'cardimages/sansebastian.jpg')">
+                <%= image_tag("cardimages/sansebastian.jpg")%>
             </div>
         </td>
         <td>
-            <div id="img_box" class="letterimage">
-                <%= link_to image_tag("cardimages/thankyoupoppy.jpg"), step_three_path%>
+            <div id="img_box" class="letterimage" onclick="pop('Thank You Poppy', 'cardimages/thankyoupoppy.jpg')">
+                <%= image_tag("cardimages/thankyoupoppy.jpg")%>
             </div>
         </td>
         <td>
-            <div id="img_box" class="letterimage">
-                <%= link_to image_tag("cardimages/thankyouturquoise.jpg"), step_three_path%>
+            <div id="img_box" class="letterimage" onclick="pop('Thank You Turquoise', 'cardimages/thankyouturquoise.jpg')">
+                <%= image_tag("cardimages/thankyouturquoise.jpg")%>
             </div>
         </td>       
     </tr>
 </table>
 
-
 </center>
 <div class="optionMessage"><%= link_to 'Add A Message', step_three_path %></div>
-
-
-<button class="btn" onclick="pop()">Alert Box</button>
 
